@@ -1,0 +1,110 @@
+{
+  "particles": {
+    "number": {
+      "value": 99,
+      "density": {
+        "enable": true,
+        "value_area": 2000
+      }
+    },
+    "color": {
+      "value": "#f7f7d3"
+    },
+    "shape": {
+      "type": "star",
+      "stroke": {
+        "width": 0,
+        "color": "#d24e4e"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "http://wiki.lexisnexis.com/academic/images/f/fb/Itunes_podcast_icon_300.jpg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.7339073067180136,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 1.998001998001998,
+        "opacity_min": 0.24775224775224775,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 7,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 3,
+        "size_min": 3.996003996003996,
+        "sync": true
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "top",
+      "random": true,
+      "straight": false,
+      "out_mode": "bounce",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 552.4033491425909,
+        "rotateY": 631.3181133058181
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 200,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}

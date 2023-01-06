@@ -407,6 +407,10 @@ h2 {
     width: 200px;
     margin: 25px;
     margin-top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .credits__users>li>img {
@@ -442,7 +446,7 @@ h2 {
         transform: translateY(-50%);
         left: 5%;
     }
-    
+
     .navbar__list::after {
         content: "━━━━━";
         position: absolute;
@@ -461,10 +465,6 @@ h2 {
     /* .center {
         max-width: 800px;
     } */
-    
-    .navbar {
-        /* display: none; */
-    }
 
     /* ------------ ABOUT ------------ */
     .about__modes {
@@ -476,6 +476,7 @@ h2 {
         justify-items: center;
         align-items: center;
     }
+
     .about__modes__item {
         width: 220px;
         padding: 20px;
@@ -484,13 +485,87 @@ h2 {
 
     /* ------------ DOWNLOAD ------------ */
     .download__block {
-        max-width: 800px;
+        max-width: 600px;
     }
+
     .download__source,
     .download__game {
-        max-width: 350px;
+        max-width: 250px;
     }
+
     .download__link__img {
         max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* ------------ NAVBAR ------------ */
+    .navbar {
+        display: none;
+    }
+
+    /* ------------ HOME ------------ */
+    .home {
+        max-width: 600px;
+    }
+
+    /* ------------ ABOUT ------------ */
+    .about__info {
+        text-align: center;
+        max-width: 500px;
+    }
+
+    .about__info__img {
+        max-width: 300px;
+    }
+
+    .about__info__text {
+        max-width: 450px;
+        font-size: large;
+    }
+
+    /* ------------ SOCIAL ------------ */
+    .social {
+        max-width: 600px;
+    }
+
+    /* ------------ CREDITS ------------ */
+    .credits__users>li {
+        margin: 20px;
+    }
+
+    .credits__users>li>img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .credits__users>li>h4,
+    .credits__users>li>p {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* ------------ CREDITS ------------ */
+    .credits {
+        padding: 0;
+        padding-top: 20px;
+    }
+    .credits__users>li {
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    .credits__users>li>img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .credits__users>li>h4,
+    .credits__users>li>p {
+        max-width: 120px;
+        font-size: 16px;
     }
 }

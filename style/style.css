@@ -448,3 +448,10 @@ h2 {
     height: 5vh;
     background: var(--gradient);
 }
+
+@media (max-width: 700px) {
+    body {
+        color: red;
+        font-size: 40px;
+    }
+}

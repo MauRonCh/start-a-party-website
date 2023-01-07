@@ -598,8 +598,7 @@ h2 {
 
     /* ------------ SOCIAL ------------ */
     .social {
-        max-width: 600px;
-        margin: 20px;
+        margin: 0 20px;
     }
 
     /* ------------ CREDITS ------------ */

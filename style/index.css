@@ -49,3 +49,9 @@ span {
 a > span {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    *{
+        scroll-padding-top: 0;
+    }
+}

@@ -1,20 +1,24 @@
-// Modes selection
-// const modes = [
-//     "party",
-//     "minigames",
-//     "trials",
-//     "store"
-// ];
+//* Menu open | close 
+const btnClose = document.getElementById('close');
+const btnOpen = document.getElementById('open');
+const menu = document.getElementById('navbar');
 
-// for (let i = 0; i < modes.length; i++) {
-//     let mode = modes[i];
-//     let mode_button = document.getElementById(mode);
-//     let mode_info = document.getElementById(mode + "-info");
-//     mode_button.onclick = function() {
-//         mode_info.classList.remove("modes");
-//     }
-// }
+btnOpen.onclick = function () {
+    menu.classList.add('open')
+}
 
+btnClose.onclick = function () {
+    menu.classList.remove('open')
+}
+
+menu.addEventListener('click', function (event) {
+    if (event.target.matches('.navbar__item')) {
+        menu.classList.remove('open')
+    }
+})
+
+
+//* Modes selection
 const modes = [
     "party",
     "minigames",
@@ -34,10 +38,10 @@ for (let i = 0; i < modes.length; i++) {
 for (let i = 0; i < modes.length; i++) {
     let mode_button = mode_buttons[i];
     // mode_button.index = i;
-    mode_button.onclick = function() {
+    mode_button.onclick = function () {
         for (let j = 0; j < modes.length; j++) {
             let mode_info = mode_infos[j];
-            
+
             if (j == i) {
                 mode_info.classList.remove("modes");
             } else {
@@ -47,12 +51,12 @@ for (let i = 0; i < modes.length; i++) {
     }
 }
 
-//Particles
+//*Particles
 window.addEventListener('DOMContentLoaded', (e) => {
     particlesJS({
         "particles": {
             "number": {
-                "value": 70,
+                "value": 150,
                 "density": {
                     "enable": true,
                     "value_area": 2000
@@ -126,7 +130,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
                     "mode": "bubble"
                 },
                 "onclick": {
-                    "enable": true,
+                    "enable": false,
                     "mode": "push"
                 },
                 "resize": true

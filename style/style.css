@@ -357,9 +357,9 @@ h2 {
 }
 
 .social__delicious>a {
-    max-width: 100%;
+    max-width: 500px;
     max-height: 100%;
-    width: 450px;
+    padding: 0 50px;
     height: 96px;
     background: linear-gradient(to bottom, rgb(255, 153, 153), white, rgb(255, 149, 149));
     border-radius: 20px;
@@ -462,10 +462,6 @@ h2 {
 
 @media (max-width: 1024px) {
 
-    /* .center {
-        max-width: 800px;
-    } */
-
     /* ------------ ABOUT ------------ */
     .about__modes {
         margin: 20px auto;
@@ -530,7 +526,10 @@ h2 {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         max-width: 100%;
-        gap: 15px
+        gap: 15px;
+        min-width: 300px;
+        padding: 0;
+        padding-top: 20px;
     }
 
     /* ------------ SOCIAL ------------ */
@@ -574,11 +573,27 @@ h2 {
 
 @media (max-width: 480px) {
 
+    /* ------------ ABOUT ------------ */
+    .about__info__text {
+        padding: 10px 20px;
+    }
+
+    .about__modes__block>article {
+        margin: 0;
+    }
+
+    .about__modes__item {
+        font-size: 20px;
+        max-width: 180px;
+        padding: 20px 0px;
+    }
+
     /* ------------ CREDITS ------------ */
     .credits {
         padding: 0;
         padding-top: 20px;
     }
+
     .credits__users>li {
         margin: 0px;
         margin-bottom: 20px;

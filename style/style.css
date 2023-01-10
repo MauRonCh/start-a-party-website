@@ -90,20 +90,26 @@ h2 {
     align-items: center;
     gap: 20px;
     height: 100vh;
-    max-width: 100vw;
+    max-width: 60vw;
 }
 
 .home__img {
-    max-width: 800px;
+    max-width: 100%;
 }
 
 .home__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 15px 50px;
-    margin: 20px;
+    margin: 20px 40px;
     border-radius: 20px;
-    font-size: 32px;
+    font-size: 2.5rem;
     background: var(--gradient-button);
     transition: transform ease 0.2s, filter ease 0.2s, box-shadow ease 0.2s;
+    width: 70%;
+    height: 8%;
+    text-align: center;
 }
 
 .home__button:hover {
@@ -515,6 +521,11 @@ h2 {
 }
 
 @media (max-width: 768px) {
+    
+    /* ------------ HOME ------------ */
+    .home {
+        max-width: 80vw;
+    }
 
     /* ------------ NAVBAR ------------ */
     .navbar {
@@ -553,12 +564,7 @@ h2 {
         top: 0;
         transition: all ease-in-out 0.5s;
     }
-
-    /* ------------ HOME ------------ */
-    .home {
-        max-width: 400px;
-    }
-
+    
     /* ------------ ABOUT ------------ */
     .about__info {
         text-align: center;
